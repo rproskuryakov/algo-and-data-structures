@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+#include "max_pairwise_product.h"
 
 long long maxPairwiseProduct(const std::vector<int> &array) {
     int first_max = 0;
@@ -28,7 +29,7 @@ long long maxPairwiseProduct(const std::vector<int> &array) {
 }
 
 
-int main() {
+int local_main() {
     int n;
     std::cin >> n;
     std::vector<int> numbers(n);

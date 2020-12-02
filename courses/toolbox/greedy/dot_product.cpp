@@ -2,10 +2,9 @@
 #include <iostream>
 #include <vector>
 
-using std::vector;
+#include "dot_product.h"
 
-long long max_dot_product(vector<int> a, vector<int> b) {
-    // write your code here
+long long max_dot_product(std::vector<int> a, std::vector<int> b) {
     long long result = 0;
     std::sort(a.begin(), a.end(), std::greater<int>());
     std::sort(b.begin(), b.end(), std::greater<int>());
@@ -15,11 +14,11 @@ long long max_dot_product(vector<int> a, vector<int> b) {
     return result;
 }
 
-int main() {
+int local_main() {
     // a_i is profit per click & b_i is avg n of clicks per day
     size_t n;
     std::cin >> n;
-    vector<int> a(n), b(n);
+    std::vector<int> a(n), b(n);
     for (size_t i = 0; i < n; i++) {
         std::cin >> a[i];
     }

@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "fibonacci.h"
 
 int fibonacci(int number) {
     int n_1 = 1;
@@ -17,7 +18,7 @@ int fibonacci(int number) {
     return acc;
 }
 
-int main() {
+int local_main() {
     int n;
     std::cin >> n;
     int result = fibonacci(n);

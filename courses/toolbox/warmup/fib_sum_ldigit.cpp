@@ -1,6 +1,8 @@
 #include <iostream>
 
-long fibonacci(int number) {
+#include "fib_sum_ldigit.h"
+
+long fibonacci_digit_sum(int number) {
     long n_1 = 0;
     long n_2 = 1;
 
@@ -16,12 +18,12 @@ long fibonacci(int number) {
     return acc;
 }
 
-int main() {
+int local_main() {
     long long n;
     std::cin >> n;
     long long m = (n + 2) % 60;
     //std::cout << m << std::endl;
-    long fib = fibonacci(m) % 10;
+    long fib = fibonacci_digit_sum(m) % 10;
     if (fib == 0) {
         std::cout << 9;
     } else {

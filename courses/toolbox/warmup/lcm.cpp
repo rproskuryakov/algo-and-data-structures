@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-int main() {
+int local_main() {
     int a;
     int b;
     int gcd_result;

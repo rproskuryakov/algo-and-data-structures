@@ -1,17 +1,14 @@
 #include <iostream>
 #include <vector>
 
-using std::cin;
-using std::cout;
-using std::vector;
-using std::max;
+#include "car_fueling.h"
 
-int compute_min_refills(int dist, int tank, vector<int> & stops) {
+int compute_min_refills(int dist, int tank, std::vector<int> & stops) {
     int num_refills = 0;
     int current_refill = 0;
     int last_refill;
     int n = stops.size();
-    vector<int> new_stops(n + 2);
+    std::vector<int> new_stops(n + 2);
     new_stops[0] = 0;
     new_stops[n + 1] = dist;
     for (size_t i = 1; i <= n; ++i) {
@@ -33,19 +30,19 @@ int compute_min_refills(int dist, int tank, vector<int> & stops) {
 }
 
 
-int main() {
+int local_main() {
     int d = 0;
-    cin >> d;
+    std::cin >> d;
     int m = 0;
-    cin >> m;
+    std::cin >> m;
     int n = 0;
-    cin >> n;
+    std::cin >> n;
 
-    vector<int> stops(n);
+    std::vector<int> stops(n);
     for (size_t i = 0; i < n; ++i)
-        cin >> stops.at(i);
+        std::cin >> stops.at(i);
 
-    cout << compute_min_refills(d, m, stops) << "\n";
+    std::cout << compute_min_refills(d, m, stops) << "\n";
 
     return 0;
 }
