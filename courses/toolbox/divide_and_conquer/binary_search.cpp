@@ -2,6 +2,8 @@
 #include <cassert>
 #include <vector>
 
+#include "binary_search.h"
+
 using std::vector;
 
 long binary_search(const vector<int> &a, int x) {
@@ -28,10 +30,10 @@ int linear_search(const vector<int> &a, int x) {
     return -1;
 }
 
-int main() {
+int local_main() {
     int n;
     std::cin >> n;
-    vector<long> a(n);
+    vector<int> a(n);
     for (size_t i = 0; i < a.size(); i++) {
         std::cin >> a[i];
     }
