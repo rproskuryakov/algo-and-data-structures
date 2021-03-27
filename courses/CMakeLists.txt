@@ -15,6 +15,7 @@ set(HEADER_FILES
 
         toolbox/dynamic_programming/money_change.h
         toolbox/dynamic_programming/edit_distance.h
+        toolbox/dynamic_programming/longest_common_subsequence.h
         )
 
 set(SOURCE_FILES
@@ -34,6 +35,7 @@ set(SOURCE_FILES
 
         toolbox/dynamic_programming/money_change.cpp
         toolbox/dynamic_programming/edit_distance.cpp
+        toolbox/dynamic_programming/longest_common_subsequence.cpp
         )
 
 add_library(Algorithms_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})

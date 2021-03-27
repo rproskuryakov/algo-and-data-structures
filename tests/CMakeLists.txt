@@ -10,6 +10,7 @@ add_executable(tests_run
         toolbox/divide_and_conquer/inversions_test.cpp
         toolbox/dynamic_programming/money_change_test.cpp
         toolbox/dynamic_programming/edit_distance_test.cpp
+        toolbox/dynamic_programming/longest_common_subsequence_test.cpp
         )
 
 target_link_libraries(tests_run Algorithms_lib)
