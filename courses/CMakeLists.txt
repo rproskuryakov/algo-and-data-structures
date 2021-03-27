@@ -12,6 +12,9 @@ set(HEADER_FILES
         toolbox/divide_and_conquer/binary_search.h
         toolbox/divide_and_conquer/majority_element.h
         toolbox/divide_and_conquer/inversions.h
+
+        toolbox/dynamic_programming/money_change.h
+        toolbox/dynamic_programming/edit_distance.h
         )
 
 set(SOURCE_FILES
@@ -28,6 +31,9 @@ set(SOURCE_FILES
         toolbox/divide_and_conquer/binary_search.cpp
         toolbox/divide_and_conquer/majority_element.cpp
         toolbox/divide_and_conquer/inversions.cpp
+
+        toolbox/dynamic_programming/money_change.cpp
+        toolbox/dynamic_programming/edit_distance.cpp
         )
 
 add_library(Algorithms_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
